@@ -9,9 +9,9 @@ export const STREAM_STRUCT_OFFSET_RECIPIENT = 113;
 
 export const PROGRAM_ID = {
   [Cluster.Devnet]: "FFkD62HkFqFj9fNxkgJm7TmrZX7XDCGDsU6yaiXixBh9",
-  [Cluster.Mainnet]: "FFkD62HkFqFj9fNxkgJm7TmrZX7XDCGDsU6yaiXixBh9",
-  [Cluster.Testnet]: "FFkD62HkFqFj9fNxkgJm7TmrZX7XDCGDsU6yaiXixBh9",
-  [LocalCluster.Local]: "FFkD62HkFqFj9fNxkgJm7TmrZX7XDCGDsU6yaiXixBh9",
+  [Cluster.Mainnet]: "strmRqUCoQUgGUan5YhzUZa6KqdzwX5L6FpUxfmKg5m",
+  [Cluster.Testnet]: "HqDGZjaVRXJ9MGRQEw7qDc2rAr6iH1n1kAQdCZaCMfMZ",
+  [LocalCluster.Local]: "HqDGZjaVRXJ9MGRQEw7qDc2rAr6iH1n1kAQdCZaCMfMZ",
 };
 
 export const STREAMFLOW_PROGRAM_ID =

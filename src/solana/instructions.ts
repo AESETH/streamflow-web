@@ -278,7 +278,7 @@ export const withdrawStreamInstruction = (
   const encodeLength = Layout.withdrawStreamLayout.encode(decodedData, data);
   data = data.slice(0, encodeLength);
   data = Buffer.concat([
-    Buffer.from(sha256.digest("global:withdraw")).slice(0, 8),
+    Buffer.from([0, 0, 0, 0, 0, 0, 0, 1]),
     data,
     Buffer.alloc(10)
   ]);
@@ -345,7 +345,7 @@ export const cancelStreamInstruction = (
   ];
 
   const data = Buffer.concat([
-    Buffer.from(sha256.digest("global:cancel")).slice(0, 8),
+    Buffer.from([0, 0, 0, 0, 0, 0, 0, 2]),
     Buffer.alloc(10),
   ]);
 
@@ -464,7 +464,7 @@ export const topupStreamInstruction = (
   const encodeLength = Layout.topupStreamLayout.encode(decodedData, data);
   data = data.slice(0, encodeLength);
   data = Buffer.concat([
-    Buffer.from(sha256.digest("global:topup")).slice(0, 8),
+    Buffer.from([0, 0, 0, 0, 0, 0, 0, 3]),
     data,
     Buffer.alloc(10)
   ]);
